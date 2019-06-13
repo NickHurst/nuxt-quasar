@@ -6,6 +6,10 @@ module.exports = {
   },
   extends: [
     "@nuxtjs"
-  ]
+  ],
+  rules: {
+    "comma-dangle": ["error", "always-multiline"],
+    "semi": ["error", "always"]
+  }
 }
 
