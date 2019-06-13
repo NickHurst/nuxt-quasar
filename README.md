@@ -9,7 +9,7 @@ so use with caution. There are currently no tests, but this module
 is currently used in production on a few of my Nuxt apps, however they
 all follow the roughly same configuration, so there are likely bugs lurking
 that I haven't found due to the limited usage at the time, so if you find a bug,
-please create an issue and so I (or maybe someone else) can get it fixed.**
+please create an issue so I (or maybe someone else) can get it fixed.**
 
 ## Install
 
