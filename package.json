@@ -1,5 +1,5 @@
 {
-  "name": "quasar-nuxt",
+  "name": "nuxt-quasar",
   "version": "0.1.0",
   "description": "Nuxt module for the Quasar Framework",
   "main": "src/index.js",
