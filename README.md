@@ -1,5 +1,7 @@
 # Nuxt Quasar Module
 
+[![npm](https://img.shields.io/npm/v/nuxt-quasar.svg)](https://www.npmjs.com/package/nuxt-quasar)
+
 A Nuxt module for the [Quasar Framework](https://quasar.dev).
 
 > Note this module only supports Quasar >= 1.0
@@ -20,6 +22,20 @@ $ npm install --save nuxt-quasar
 
 $ yarn add nuxt-quasar
 ```
+
+Then add it to your `nuxt.config.js`:
+
+```js
+export default {
+  // ...
+  modules: [
+    'nuxt-quasar',
+  ],
+  // ...
+};
+```
+
+Then start it up to load Quasar with everything loaded and the default configuration, or start adding your own [configuration](#Configuration) via the `nuxt.config.js` or by creating a `quasar.conf.js`.
 
 ## Features
 
@@ -124,18 +140,13 @@ Vue components with a stylus style block:
 
 ```stylus
 // ./assets/quasar.variables.styl
+
 $primary = #ffffff
 // etc...
 ```
 
-```vue
-<script>
+```html
 // ./components/MyComponent.vue
-export default {
-  props: ["foo"],
-};
-</script>
-
 <style lang="stylus">
 .my-component
   color $positive
