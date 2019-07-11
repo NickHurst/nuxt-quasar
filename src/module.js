@@ -33,7 +33,8 @@ const mergeOptions = (moduleOptions, nuxtOptions, resolver) => {
 
 export default function nuxtQuasar(moduleOptions) {
   const resolver = this.nuxt.resolver || this.nuxt;
-  const pushCSS = file => this.options.css.push(file);
+  const pushCSS = file =>
+    fs.existsSync(file) && this.options.css.push(file);
 
   const options = mergeOptions(moduleOptions, this.options.quasar, resolver);
 

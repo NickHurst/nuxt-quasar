@@ -26,16 +26,24 @@ import iconSet from 'quasar/icon-set/material-icons.js';
 <% } %>
 
 Vue.use(Quasar, {
+  <% if (config) { %>
   config: <%= JSON.stringify(config, null, '\t') %>,
+  <% } %>
+  <% if (components && components.length) { %>
   components: {
 <%= components.map(s => '\t\t' + s).join(',\n') + ',\n' %>
   },
+  <% } %>
+  <% if (directives && directives.length) { %>
   directives: {
 <%= directives.map(s => '\t\t' + s).join(',\n') + ',\n' %>
   },
+  <% } %>
+  <% if (plugins && plugins.length) { %>
   plugins: {
 <%= plugins.map(s => '\t\t' + s).join(',\n') + ',\n' %>
   },
+  <% } %>
   iconSet,
 });
 <% } %>
